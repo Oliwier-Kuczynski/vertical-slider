@@ -1,83 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 *,
 *::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 button {
-    border: none;
-    background: hsl(0, 0%, 100%);
-    color: hsl(0, 0%, 68%);
+  border: none;
+  background: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 68%);
 }
 
 .slider-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .slide-left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 35%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide-left > div {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-content: center;
-    gap: 0.6rem;
-    color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  gap: 0.6rem;
+  color: hsl(0, 0%, 100%);
 }
 
 .slide-left > div > h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .slide-right {
-    position: absolute;
-    top: 0;
-    left: 35%;
-    width: 65%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide-right > div {
-    width: 100%;
-    height: 100vh;
-    background: center  center no-repeat ;
-    background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background: center center no-repeat;
+  background-size: cover;
 }
 
 .navigation-arrow-up {
-   transform: translate(-100%, -100%);
-   border-radius: 0.3rem 0 0 0.3rem;
+  transform: translate(-100%, -100%);
+  border-radius: 0.3rem 0 0 0.3rem;
 }
 
 .navigation-arrow-down {
-    border-radius: 0 0.3rem 0.3rem 0;
+  border-radius: 0 0.3rem 0.3rem 0;
 }
 
 .navigation-arrow-up,
 .navigation-arrow-down {
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    font-size: 1.8rem;
-    padding: 0.6rem;
-    cursor: pointer;
-    background: hsl(0, 0%, 100%);
-    color: hsl(222, 20%, 80%);
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-size: 1.8rem;
+  padding: 0.6rem;
+  cursor: pointer;
+  background: hsl(0, 0%, 100%);
+  color: hsl(222, 20%, 80%);
 }
